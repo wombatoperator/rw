@@ -73,8 +73,8 @@ export default function Home() {
       <FloatingPhotos />
       <main className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 py-4 sm:px-6 sm:py-6">
         {/* Hero */}
-        <div className="mb-6 text-center">
-          <div className="relative mx-auto mb-4 max-w-2xl">
+        <div className="mb-2 text-center">
+          <div className="relative mx-auto mb-3 max-w-2xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/hero.png"
@@ -104,7 +104,7 @@ export default function Home() {
         </div>
 
         {/* See for yourself */}
-        <div className="mt-4 mb-4 flex flex-col items-center sm:mt-6">
+        <div className="mt-1 mb-2 flex flex-col items-center sm:mt-2">
           <p
             className="mb-2 text-xs uppercase tracking-[0.3em] text-white/30"
             style={{ fontFamily: "var(--font-display)" }}
