@@ -89,14 +89,22 @@ export default function Home() {
             className="mx-auto mb-2 max-w-2xl px-2 text-sm leading-relaxed text-white/40 sm:text-base"
             style={{ fontFamily: "var(--font-mono)" }}
           >
-            LD3 State Senate candidate Robert Wallace wants to be the voice of
-            normal, everyday Arizonans — but he&apos;s said some very interesting
-            things. Things we think everyone should know about.
+            The images you see depict statements and beliefs shared by Robert
+            Wallace in his Spiritual Realities videos on YouTube. Click the
+            images and titles below to hear directly from Robert Wallace himself
+            talk about how he has &quot;Traveled to Different Dimensions&quot;
+            and seen &quot;Hallucinations of Teletubbie &amp; Lizard-Like
+            Beings&quot;. Robert also believes to be a &quot;Reincarnated Black
+            Gangbanger&quot; and is haunted by &quot;Bathroom Spirits&quot;.
+            These are just a few of the many Wacky &amp; Bizarre Beliefs you
+            will hear him talking about. After watching these videos, I&apos;m
+            sure you will see Robert Wallace has no business running for any
+            public office.
           </p>
         </div>
 
         {/* See for yourself */}
-        <div className="mt-[4vh] mb-4 flex flex-col items-center sm:mt-[8vh]">
+        <div className="mt-4 mb-4 flex flex-col items-center sm:mt-6">
           <p
             className="mb-2 text-xs uppercase tracking-[0.3em] text-white/30"
             style={{ fontFamily: "var(--font-display)" }}

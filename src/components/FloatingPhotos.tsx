@@ -24,8 +24,8 @@ export default function FloatingPhotos() {
           style={{
             top: slot.top,
             ...(slot.side === "left"
-              ? { left: "8vw" }
-              : { right: "8vw" }),
+              ? { left: slot.offset ?? "8vw" }
+              : { right: slot.offset ?? "8vw" }),
             width: `${slot.size}px`,
             transform: `rotate(${slot.rotate}deg)`,
             animationName: slot.drift,
