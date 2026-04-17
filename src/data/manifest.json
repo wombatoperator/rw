@@ -1,0 +1,138 @@
+{
+  "collections": [
+    {
+      "id": "robert-wallace-2",
+      "name": "Robert Wallace 2",
+      "categories": [
+        {
+          "id": "charlie-kirk-conspiracy-facebook-posts",
+          "name": "Charlie Kirk Conspiracy - Facebook Posts",
+          "files": [
+            {"id": "2025-09-12-fb-robert-wallace-1", "name": "2025.09.12 FB Robert Wallace-1", "filename": "2025.09.12 FB Robert Wallace-1.png", "type": "image", "extension": "png", "size": 1236029, "date": "2025-09-12", "localPath": "Robert Wallace 2/Charlie Kirk Conspiracy-Facebook Posts/2025.09.12 FB Robert Wallace-1.png", "blobUrl": null},
+            {"id": "2025-09-12-fb-robert-wallace-2", "name": "2025.09.12 FB Robert Wallace-2", "filename": "2025.09.12 FB Robert Wallace-2.png", "type": "image", "extension": "png", "size": 1029028, "date": "2025-09-12", "localPath": "Robert Wallace 2/Charlie Kirk Conspiracy-Facebook Posts/2025.09.12 FB Robert Wallace-2.png", "blobUrl": null},
+            {"id": "2025-09-12-fb-robert-wallace-3", "name": "2025.09.12 FB Robert Wallace-3", "filename": "2025.09.12 FB Robert Wallace-3.png", "type": "image", "extension": "png", "size": 1051635, "date": "2025-09-12", "localPath": "Robert Wallace 2/Charlie Kirk Conspiracy-Facebook Posts/2025.09.12 FB Robert Wallace-3.png", "blobUrl": null},
+            {"id": "2025-09-12-fb-robert-wallace-4", "name": "2025.09.12 FB Robert Wallace-4", "filename": "2025.09.12 FB Robert Wallace-4.png", "type": "image", "extension": "png", "size": 1081047, "date": "2025-09-12", "localPath": "Robert Wallace 2/Charlie Kirk Conspiracy-Facebook Posts/2025.09.12 FB Robert Wallace-4.png", "blobUrl": null},
+            {"id": "2025-09-12-fb-robert-wallace-5", "name": "2025.09.12 FB Robert Wallace-5", "filename": "2025.09.12 FB Robert Wallace-5.mp4", "type": "video", "extension": "mp4", "size": 7915633, "date": "2025-09-12", "localPath": "Robert Wallace 2/Charlie Kirk Conspiracy-Facebook Posts/2025.09.12 FB Robert Wallace-5.mp4", "blobUrl": null},
+            {"id": "2025-09-13-rm-robert-wallace-2", "name": "2025.09.13 RM Robert Wallace-2", "filename": "2025.09.13 RM Robert Wallace-2.png", "type": "image", "extension": "png", "size": 852124, "date": "2025-09-13", "localPath": "Robert Wallace 2/Charlie Kirk Conspiracy-Facebook Posts/2025.09.13 RM Robert Wallace-2.png", "blobUrl": null}
+          ]
+        },
+        {
+          "id": "dmt",
+          "name": "DMT",
+          "files": [
+            {"id": "2019-10-25-rd-robert-wallace-1", "name": "2019.10.25 RD Robert Wallace-1", "filename": "2019.10.25 RD Robert Wallace-1.png", "type": "image", "extension": "png", "size": 1360366, "date": "2019-10-25", "localPath": "Robert Wallace 2/DMT/2019.10.25 RD Robert Wallace-1.png", "blobUrl": null},
+            {"id": "2019-10-25-rd-robert-wallace-2", "name": "2019.10.25 RD Robert Wallace-2", "filename": "2019.10.25 RD Robert Wallace-2.png", "type": "image", "extension": "png", "size": 4281087, "date": "2019-10-25", "localPath": "Robert Wallace 2/DMT/2019.10.25 RD Robert Wallace-2.png", "blobUrl": null},
+            {"id": "2019-11-14-rd-robert-wallace", "name": "2019.11.14 RD Robert Wallace", "filename": "2019.11.14 RD Robert Wallace.png", "type": "image", "extension": "png", "size": 1206796, "date": "2019-11-14", "localPath": "Robert Wallace 2/DMT/2019.11.14 RD Robert Wallace.png", "blobUrl": null},
+            {"id": "2021-03-10-rd-robert-wallace-2", "name": "2021.03.10 RD Robert Wallace-2", "filename": "2021.03.10 RD Robert Wallace-2.png", "type": "image", "extension": "png", "size": 225273, "date": "2021-03-10", "localPath": "Robert Wallace 2/DMT/2021.03.10 RD Robert Wallace-2.png", "blobUrl": null},
+            {"id": "dmt-license-plate-and-i-love-plate", "name": "DMT License plate and I Love Plate", "filename": "DMT License plate and I Love Plate.png", "type": "image", "extension": "png", "size": 4299563, "date": null, "localPath": "Robert Wallace 2/DMT/DMT License plate and I Love Plate.png", "blobUrl": null},
+            {"id": "dmt-use-spiritualrealities-e24-clip", "name": "DMT USE - SpiritualRealities E24 Clip", "filename": "DMT USE-SpiritualRealities-E24-Clip.mp4", "type": "video", "extension": "mp4", "size": 2039390, "date": null, "localPath": "Robert Wallace 2/DMT/DMT USE-SpiritualRealities-E24-Clip.mp4", "blobUrl": null},
+            {"id": "making-dmt-reddit-thread-steps-to-make-dmt", "name": "Making DMT - Reddit Thread Steps to make DMT", "filename": "Making DMT-Reddit Thread Steps to make DMT.png", "type": "image", "extension": "png", "size": 383526, "date": null, "localPath": "Robert Wallace 2/DMT/Making DMT-Reddit Thread Steps to make DMT.png", "blobUrl": null},
+            {"id": "making-dmt-reddit-thread-cont-2", "name": "Making DMT - Reddit Thread cont 2", "filename": "Making DMT-Reddit Thread cont 2.png", "type": "image", "extension": "png", "size": 380112, "date": null, "localPath": "Robert Wallace 2/DMT/Making DMT-Reddit Thread cont 2.png", "blobUrl": null},
+            {"id": "making-dmt-reddit-thread-cont", "name": "Making DMT - Reddit Thread cont", "filename": "Making DMT-Reddit Thread cont.png", "type": "image", "extension": "png", "size": 242102, "date": null, "localPath": "Robert Wallace 2/DMT/Making DMT-Reddit Thread cont.png", "blobUrl": null},
+            {"id": "making-dmt-reddit-thread", "name": "Making DMT - Reddit Thread", "filename": "Making DMT-Reddit Thread.png", "type": "image", "extension": "png", "size": 233432, "date": null, "localPath": "Robert Wallace 2/DMT/Making DMT-Reddit Thread.png", "blobUrl": null},
+            {"id": "making-dmt-reddit", "name": "Making DMT - Reddit", "filename": "Making DMT-Reddit.png", "type": "image", "extension": "png", "size": 1248113, "date": null, "localPath": "Robert Wallace 2/DMT/Making DMT-Reddit.png", "blobUrl": null}
+          ]
+        },
+        {
+          "id": "hallucinations",
+          "name": "Hallucinations",
+          "files": [
+            {"id": "e16-bhagavad-gita-and-interdimensional-meditation", "name": "E.16 Bhagavad Gita and Interdimensional Meditation", "filename": "E.16 Bhagavad Gita and Interdimensional Meditation.mp4", "type": "video", "extension": "mp4", "size": 82564348, "date": null, "localPath": "Robert Wallace 2/Hallucinations/E.16 Bhagavad Gita and Interdimensional Meditation.mp4", "blobUrl": null},
+            {"id": "e3-be-still-and-know-i-am-god", "name": "E.3 Be Still and Know I Am God & The Impersonal Life", "filename": "E.3 Be Still and Know I Am God. amp_ The Impersonal Life.mp4", "type": "video", "extension": "mp4", "size": 70581636, "date": null, "localPath": "Robert Wallace 2/Hallucinations/E.3 Be Still and Know I Am God. amp_ The Impersonal Life.mp4", "blobUrl": null},
+            {"id": "e20-staying-on-purpose", "name": "E20 Staying on Purpose", "filename": "E20  Staying on Purpose.mp4", "type": "video", "extension": "mp4", "size": 61832902, "date": null, "localPath": "Robert Wallace 2/Hallucinations/E20  Staying on Purpose.mp4", "blobUrl": null},
+            {"id": "hallucinations-are-we-in-heaven", "name": "Hallucinations - Are We In Heaven - Interdimensional Experiences", "filename": "Hallucinations-Are We In Heaven-Having interdementional experiences-SR-E3-Clip.mp4", "type": "video", "extension": "mp4", "size": 1712128, "date": null, "localPath": "Robert Wallace 2/Hallucinations/Hallucinations-Are We In Heaven-Having interdementional experiences-SR-E3-Clip.mp4", "blobUrl": null},
+            {"id": "hallucinations-bathroom-spirits", "name": "Hallucinations - Bathroom Spirits", "filename": "Hallucinations-Bathroom Spirits-SRE6-Clip.mp4", "type": "video", "extension": "mp4", "size": 797626, "date": null, "localPath": "Robert Wallace 2/Hallucinations/Hallucinations-Bathroom Spirits-SRE6-Clip.mp4", "blobUrl": null},
+            {"id": "hallucinations-sre20-teletubby", "name": "Hallucinations - Teletubby", "filename": "Hallucinations-SRE20-Teletubby-Clip.mp4", "type": "video", "extension": "mp4", "size": 2680233, "date": null, "localPath": "Robert Wallace 2/Hallucinations/Hallucinations-SRE20-Teletubby-Clip.mp4", "blobUrl": null},
+            {"id": "hallucinations-seeing-beings-traveling-aliens", "name": "Hallucinations - Seeing Beings, Traveling, Starting Plants, Seeing Aliens", "filename": "Hallucincations-Seeing Beings-Traveling-Starting Plants-Seeing Aliens-SR-E16-Clip.mp4", "type": "video", "extension": "mp4", "size": 11746807, "date": null, "localPath": "Robert Wallace 2/Hallucinations/Hallucincations-Seeing Beings-Traveling-Starting Plants-Seeing Aliens-SR-E16-Clip.mp4", "blobUrl": null}
+          ]
+        },
+        {
+          "id": "interdimensional-travel",
+          "name": "Interdimensional Travel",
+          "files": [
+            {"id": "2019-08-22-yt-robert-wallace-1", "name": "2019.08.22 YT Robert Wallace-1", "filename": "2019.08.22 YT Robert Wallace-1.mp4", "type": "video", "extension": "mp4", "size": 50920130, "date": "2019-08-22", "localPath": "Robert Wallace 2/Interdimensional Travel/2019.08.22 YT Robert Wallace-1.mp4", "blobUrl": null},
+            {"id": "2019-08-22-yt-robert-wallace-2", "name": "2019.08.22 YT Robert Wallace-2", "filename": "2019.08.22 YT Robert Wallace-2.mp4", "type": "video", "extension": "mp4", "size": 34997091, "date": "2019-08-22", "localPath": "Robert Wallace 2/Interdimensional Travel/2019.08.22 YT Robert Wallace-2.mp4", "blobUrl": null},
+            {"id": "interdimensional-travel-seeing-aliens", "name": "Interdimensional Travel - Seeing Aliens", "filename": "Interdimensional Travel-Seeing Aliens-.mp4", "type": "video", "extension": "mp4", "size": 7579095, "date": null, "localPath": "Robert Wallace 2/Interdimensional Travel/Interdimensional Travel-Seeing Aliens-.mp4", "blobUrl": null},
+            {"id": "life-interdimensional-3", "name": "Life Interdimensional 3", "filename": "Life Interdimensional 3.mp4", "type": "video", "extension": "mp4", "size": 258793682, "date": null, "localPath": "Robert Wallace 2/Interdimensional Travel/Life Interdimensional 3.mp4", "blobUrl": null},
+            {"id": "life-interdimensional-4", "name": "Life Interdimensional 4", "filename": "Life Interdimensional 4.mp4", "type": "video", "extension": "mp4", "size": 256494841, "date": null, "localPath": "Robert Wallace 2/Interdimensional Travel/Life Interdimensional 4.mp4", "blobUrl": null},
+            {"id": "life-interdimensional-5", "name": "Life Interdimensional 5", "filename": "Life Interdimensional 5.mp4", "type": "video", "extension": "mp4", "size": 241475632, "date": null, "localPath": "Robert Wallace 2/Interdimensional Travel/Life Interdimensional 5.mp4", "blobUrl": null},
+            {"id": "life-interdimensional-6", "name": "Life Interdimensional 6", "filename": "Life Interdimensional 6.mp4", "type": "video", "extension": "mp4", "size": 222488745, "date": null, "localPath": "Robert Wallace 2/Interdimensional Travel/Life Interdimensional 6.mp4", "blobUrl": null},
+            {"id": "life-interdimensional-1-knowing-how-to-is-dangerous-clip", "name": "Life Interdimensional 1 - Knowing How To Is Dangerous (Clip)", "filename": "LifeInterdimensional1-knowing how to is dangerous-Clip.mp4", "type": "video", "extension": "mp4", "size": 34997091, "date": null, "localPath": "Robert Wallace 2/Interdimensional Travel/LifeInterdimensional1-knowing how to is dangerous-Clip.mp4", "blobUrl": null},
+            {"id": "life-interdimensional-1", "name": "Life Interdimensional 1", "filename": "LifeInterdimensional1.mp4", "type": "video", "extension": "mp4", "size": 233796396, "date": null, "localPath": "Robert Wallace 2/Interdimensional Travel/LifeInterdimensional1.mp4", "blobUrl": null},
+            {"id": "life-interdimensional-2", "name": "Life Interdimensional 2", "filename": "LifeInterdimensional2.mp4", "type": "video", "extension": "mp4", "size": 225434177, "date": null, "localPath": "Robert Wallace 2/Interdimensional Travel/LifeInterdimensional2.mp4", "blobUrl": null},
+            {"id": "reddit-account-screenshot", "name": "Reddit Account Screenshot", "filename": "Reddit Account Screenshot.png", "type": "image", "extension": "png", "size": 3035728, "date": null, "localPath": "Robert Wallace 2/Interdimensional Travel/Reddit Account Screenshot.png", "blobUrl": null}
+          ]
+        },
+        {
+          "id": "reincarnation-and-necromancy",
+          "name": "Reincarnation & Necromancy",
+          "files": [
+            {"id": "e7-the-deceased-naughty-elements-and-the-homeless", "name": "E.7 The Deceased, Naughty Elements and the Homeless", "filename": "E.7 The Deseased, Naughty Elements and the Homeless.mp4", "type": "video", "extension": "mp4", "size": 69998902, "date": null, "localPath": "Robert Wallace 2/Reincarnation & Necromancy /E.7 The Deseased, Naughty Elements and the Homeless.mp4", "blobUrl": null},
+            {"id": "necromancy-dead-people-inside-you-slap-face", "name": "Necromancy - Dead People Inside You, Slap Face", "filename": "Necromancy-Dead People Inside you-Slap Face-SRE7-Clip.mp4", "type": "video", "extension": "mp4", "size": 3665081, "date": null, "localPath": "Robert Wallace 2/Reincarnation & Necromancy /Necromancy-Dead People Inside you-Slap Face-SRE7-Clip.mp4", "blobUrl": null},
+            {"id": "necromancy-how-to-talk-to-dead-people", "name": "Necromancy - How to Talk to Dead People", "filename": "Necromancy-How to talk to dead people-SRE7-Clip.mp4", "type": "video", "extension": "mp4", "size": 1275548, "date": null, "localPath": "Robert Wallace 2/Reincarnation & Necromancy /Necromancy-How to talk to dead people-SRE7-Clip.mp4", "blobUrl": null},
+            {"id": "reincarnation-black-gang-banger", "name": "Reincarnation - Black Gang Banger", "filename": "Reincarnation-Black Gang Banger-SRE7-Clip.mp4", "type": "video", "extension": "mp4", "size": 4619094, "date": null, "localPath": "Robert Wallace 2/Reincarnation & Necromancy /Reincarnation-Black Gang Banger-SRE7-Clip.mp4", "blobUrl": null}
+          ]
+        },
+        {
+          "id": "scientology",
+          "name": "Scientology",
+          "files": [
+            {"id": "e8-cultivating-thought-for-spiritual-advancement", "name": "E.8 Cultivating Thought for Spiritual Advancement - Steiners Right Judgement", "filename": "E.8 Cultivating Thought for Spiritual Advancement  Steiners Right Judgement.mp4", "type": "video", "extension": "mp4", "size": 72237566, "date": null, "localPath": "Robert Wallace 2/Scientology/E.8 Cultivating Thought for Spiritual Advancement  Steiners Right Judgement.mp4", "blobUrl": null},
+            {"id": "e9-oaths-the-new-age-and-forgiving", "name": "E.9 Oaths, The New Age and Forgiving as you were Forgiven", "filename": "E.9 Oaths, The New Age and Forgiving as you were Forgiven.mp4", "type": "video", "extension": "mp4", "size": 72837056, "date": null, "localPath": "Robert Wallace 2/Scientology/E.9 Oaths, The New Age and Forgiving as you were Forgiven.mp4", "blobUrl": null},
+            {"id": "scientology-billion-year-contract", "name": "Scientology - Billion Year Contract, Reincarnations owned by Hubbard", "filename": "Scientology-Billion Year Contract-Reincarnations owned by Hubbard-SRE9-Clip.mp4", "type": "video", "extension": "mp4", "size": 1066356, "date": null, "localPath": "Robert Wallace 2/Scientology/Scientology-Billion Year Contract-Reincarnations owned by Hubbard-SRE9-Clip.mp4", "blobUrl": null},
+            {"id": "scientology-cans-electrodes", "name": "Scientology - Cans, Electrodes shock you, compares to confession", "filename": "Scientology-Cans-Electrodes shock you-compares to confession-SRE8-Clip.mp4", "type": "video", "extension": "mp4", "size": 3094714, "date": null, "localPath": "Robert Wallace 2/Scientology/Scientology-Cans-Electrodes shock you-compares to confession-SRE8-Clip.mp4", "blobUrl": null},
+            {"id": "scientology-worked-there-loved-it-kicked-out", "name": "Scientology - I worked there and loved it, got kicked out", "filename": "Scientology-I worked there and loved it-Staff Status 0-1-2 but got kicked out. SRE17-Clip.mp4", "type": "video", "extension": "mp4", "size": 2758846, "date": null, "localPath": "Robert Wallace 2/Scientology/Scientology-I worked there and loved it-Staff Status 0-1-2 but got kicked out. SRE17-Clip.mp4", "blobUrl": null},
+            {"id": "scientology-started-working-at-church", "name": "Scientology - Started working at The Church of Scientology", "filename": "Scientology-Started working at The Church of Scientology-SRE5-Clip.mp4", "type": "video", "extension": "mp4", "size": 2555820, "date": null, "localPath": "Robert Wallace 2/Scientology/Scientology-Started working at The Church of Scientology-SRE5-Clip.mp4", "blobUrl": null},
+            {"id": "scientology-calls-it-a-cult-kicked-out", "name": "Scientology - Worked there, calls it a cult, got kicked out", "filename": "Scientology-Worked there calls it a cult-got kicked out-SRE24-Clip.mp4", "type": "video", "extension": "mp4", "size": 1110966, "date": null, "localPath": "Robert Wallace 2/Scientology/Scientology-Worked there calls it a cult-got kicked out-SRE24-Clip.mp4", "blobUrl": null}
+          ]
+        },
+        {
+          "id": "taco-bell-sauce-incident",
+          "name": "Taco Bell Sauce Incident",
+          "files": [
+            {"id": "2020-02-22-rd-robert-wallace-4", "name": "2020.02.22 RD Robert Wallace-4", "filename": "2020.02.22 RD Robert Wallace-4.png", "type": "image", "extension": "png", "size": 687465, "date": "2020-02-22", "localPath": "Robert Wallace 2/Taco Bell Sauce Incident /2020.02.22 RD Robert Wallace-4.png", "blobUrl": null},
+            {"id": "2020-02-22-rd-robert-wallace-5", "name": "2020.02.22 RD Robert Wallace-5", "filename": "2020.02.22 RD Robert Wallace-5.png", "type": "image", "extension": "png", "size": 124143, "date": "2020-02-22", "localPath": "Robert Wallace 2/Taco Bell Sauce Incident /2020.02.22 RD Robert Wallace-5.png", "blobUrl": null},
+            {"id": "2020-02-28-rd-robert-wallace", "name": "2020.02.28 RD Robert Wallace", "filename": "2020.02.28 RD Robert Wallace.png", "type": "image", "extension": "png", "size": 81407, "date": "2020-02-28", "localPath": "Robert Wallace 2/Taco Bell Sauce Incident /2020.02.28 RD Robert Wallace.png", "blobUrl": null}
+          ]
+        },
+        {
+          "id": "the-world-is-flat",
+          "name": "The World Is Flat",
+          "files": [
+            {"id": "2020-03-27-rd-robert-wallace-1", "name": "2020.03.27 RD Robert Wallace-1", "filename": "2020.03.27 RD Robert Wallace-1.png", "type": "image", "extension": "png", "size": 394965, "date": "2020-03-27", "localPath": "Robert Wallace 2/The World Is Flat/2020.03.27 RD Robert Wallace-1.png", "blobUrl": null},
+            {"id": "2020-03-27-rd-robert-wallace-2", "name": "2020.03.27 RD Robert Wallace-2", "filename": "2020.03.27 RD Robert Wallace-2.pdf", "type": "pdf", "extension": "pdf", "size": 1059367, "date": "2020-03-27", "localPath": "Robert Wallace 2/The World Is Flat/2020.03.27 RD Robert Wallace-2.pdf", "blobUrl": null},
+            {"id": "2020-03-28-rd-robert-wallace", "name": "2020.03.28 RD Robert Wallace", "filename": "2020.03.28 RD Robert Wallace.png", "type": "image", "extension": "png", "size": 406233, "date": "2020-03-28", "localPath": "Robert Wallace 2/The World Is Flat/2020.03.28 RD Robert Wallace.png", "blobUrl": null}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robert-wallace-3",
+      "name": "Robert Wallace 3",
+      "categories": [
+        {
+          "id": "breatharianism",
+          "name": "Breatharianism",
+          "files": [
+            {"id": "2020-02-27-yt-robert-wallace", "name": "2020.02.27 YT Robert Wallace", "filename": "2020.02.27 YT Robert Wallace.png", "type": "image", "extension": "png", "size": 3134170, "date": "2020-02-27", "localPath": "Robert Wallace 3/Breatharianism /2020.02.27 YT Robert Wallace.png", "blobUrl": null},
+            {"id": "2022-01-14-fb-robert-wallace-1", "name": "2022.01.14 FB Robert Wallace-1", "filename": "2022.01.14 FB Robert Wallace-1.png", "type": "image", "extension": "png", "size": 1511486, "date": "2022-01-14", "localPath": "Robert Wallace 3/Breatharianism /2022.01.14 FB Robert Wallace-1.png", "blobUrl": null}
+          ]
+        },
+        {
+          "id": "hallucinations",
+          "name": "Hallucinations",
+          "files": [
+            {"id": "e6-karmic-secrets-and-curtis-childs", "name": "E.6 Karmic Secrets and Curtis Childs", "filename": "E.6 Karmic Secrets and Curtis Childs.mp4", "type": "video", "extension": "mp4", "size": 69625914, "date": null, "localPath": "Robert Wallace 3/Hallucinations/E.6 Karmic Secrets and Curtis Childs.mp4", "blobUrl": null}
+          ]
+        },
+        {
+          "id": "interdimensional-travel",
+          "name": "Interdimensional Travel",
+          "files": [
+            {"id": "life-interdimensional-1-show-you-how-to-travel", "name": "Life Interdimensional 1 - Show you how to travel interdimensional (Clip)", "filename": "LifeInterdimensional1-Show you how to travel interdimensional-Clip.mp4", "type": "video", "extension": "mp4", "size": 50920130, "date": null, "localPath": "Robert Wallace 3/Interdimensional Travel/LifeInterdimensional1-Show you how to travel interdimensional-Clip.mp4", "blobUrl": null}
+          ]
+        }
+      ]
+    }
+  ]
+}

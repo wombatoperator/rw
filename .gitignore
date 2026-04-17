@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# media files (too large for git)
+/rw_full
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

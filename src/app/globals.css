@@ -1,26 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-dmt-purple: #b026ff;
+  --color-dmt-cyan: #00fff7;
+  --color-dmt-pink: #ff00ff;
+  --color-dmt-green: #39ff14;
+  --color-dmt-dark: #0a0a0a;
+  --color-dmt-darker: #050505;
+  --color-dmt-glass: rgba(255, 255, 255, 0.03);
+  --color-dmt-glass-border: rgba(255, 255, 255, 0.08);
+  --color-taco-red: #ff4500;
+
+  --font-display: "Orbitron", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "JetBrains Mono", monospace;
+  overflow-x: hidden;
+}
+
+/* ============ PSYCHEDELIC BACKGROUND ============ */
+.dmt-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.dmt-bg::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #b026ff11 0deg,
+    #00fff705 60deg,
+    #ff00ff08 120deg,
+    #39ff1405 180deg,
+    #b026ff11 240deg,
+    #00fff705 300deg,
+    #ff00ff08 360deg
+  );
+  animation: vortex 40s linear infinite;
+}
+
+.dmt-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      ellipse at 20% 50%,
+      #b026ff08 0%,
+      transparent 50%
+    ),
+    radial-gradient(ellipse at 80% 20%, #00fff706 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, #ff00ff06 0%, transparent 50%);
+  animation: breathe 8s ease-in-out infinite;
+}
+
+/* Speed up background when hovering DMT category */
+.dmt-speed .dmt-bg::before {
+  animation-duration: 8s !important;
+}
+
+@keyframes vortex {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+/* ============ GLITCH TEXT ============ */
+.glitch {
+  position: relative;
+  font-family: "Orbitron", sans-serif;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.glitch:hover::before {
+  opacity: 0.8;
+  color: #00fff7;
+  animation: glitch-1 0.3s ease-in-out;
+  clip-path: inset(20% 0 30% 0);
+}
+
+.glitch:hover::after {
+  opacity: 0.8;
+  color: #ff00ff;
+  animation: glitch-2 0.3s ease-in-out;
+  clip-path: inset(50% 0 10% 0);
+}
+
+@keyframes glitch-1 {
+  0% { transform: translate(0); }
+  20% { transform: translate(-3px, 3px); }
+  40% { transform: translate(3px, -3px); }
+  60% { transform: translate(-2px, 1px); }
+  80% { transform: translate(2px, -1px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitch-2 {
+  0% { transform: translate(0); }
+  20% { transform: translate(3px, -3px); }
+  40% { transform: translate(-3px, 3px); }
+  60% { transform: translate(2px, -1px); }
+  80% { transform: translate(-2px, 1px); }
+  100% { transform: translate(0); }
+}
+
+/* ============ GLOW EFFECTS ============ */
+.glow-purple {
+  text-shadow: 0 0 10px rgba(176, 38, 255, 0.5),
+    0 0 20px rgba(176, 38, 255, 0.3), 0 0 40px rgba(176, 38, 255, 0.1);
+}
+
+.glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 255, 247, 0.5),
+    0 0 20px rgba(0, 255, 247, 0.3);
+}
+
+.glow-pink {
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5),
+    0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+/* ============ NEON CARD ============ */
+.neon-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neon-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(176, 38, 255, 0.4);
+  box-shadow: 0 0 20px rgba(176, 38, 255, 0.15),
+    0 0 40px rgba(176, 38, 255, 0.05),
+    inset 0 0 20px rgba(176, 38, 255, 0.03);
+  transform: translateY(-4px);
+}
+
+.neon-card.taco-card:hover {
+  border-color: rgba(255, 69, 0, 0.6);
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.2),
+    0 0 40px rgba(255, 69, 0, 0.1),
+    inset 0 0 20px rgba(255, 69, 0, 0.05);
+}
+
+/* ============ PORTAL ANIMATION ============ */
+.portal-ring {
+  border: 2px solid rgba(176, 38, 255, 0.3);
+  border-radius: 50%;
+  animation: portal-pulse 3s ease-in-out infinite;
+}
+
+.portal-ring:nth-child(2) {
+  animation-delay: -1s;
+  border-color: rgba(0, 255, 247, 0.2);
+}
+
+.portal-ring:nth-child(3) {
+  animation-delay: -2s;
+  border-color: rgba(255, 0, 255, 0.2);
+}
+
+@keyframes portal-pulse {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.15) rotate(180deg);
+    opacity: 0.8;
+  }
+}
+
+/* ============ FLOATING ANIMATION ============ */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ============ PULSE GLOW BUTTON ============ */
+.portal-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.portal-btn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    45deg,
+    #b026ff,
+    #00fff7,
+    #ff00ff,
+    #39ff14,
+    #b026ff
+  );
+  border-radius: inherit;
+  z-index: -1;
+  animation: border-rotate 3s linear infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes border-rotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ============ SCANLINES ============ */
+.scanlines::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  z-index: 100;
+}
+
+/* ============ TYPE BADGES ============ */
+.badge-video {
+  background: linear-gradient(135deg, #b026ff33, #b026ff11);
+  color: #b026ff;
+  border: 1px solid #b026ff44;
+}
+
+.badge-image {
+  background: linear-gradient(135deg, #00fff733, #00fff711);
+  color: #00fff7;
+  border: 1px solid #00fff744;
+}
+
+.badge-pdf {
+  background: linear-gradient(135deg, #39ff1433, #39ff1411);
+  color: #39ff14;
+  border: 1px solid #39ff1444;
+}
+
+/* ============ SCROLLBAR ============ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b026ff44;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b026ff88;
+}
+
+/* ============ FLOATING PHOTOS ============ */
+.floating-photos-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.floating-photo {
+  position: fixed;
+  display: block;
+  pointer-events: auto;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease,
+    border-color 0.4s ease;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(176, 38, 255, 0.35);
+  box-shadow: 0 0 20px rgba(176, 38, 255, 0.3),
+    0 0 50px rgba(176, 38, 255, 0.1);
+}
+
+.floating-photo:hover {
+  opacity: 1;
+  transform: scale(1.08) rotate(0deg) !important;
+  z-index: 50;
+  border-color: rgba(0, 255, 247, 0.7);
+  box-shadow: 0 0 30px rgba(176, 38, 255, 0.6),
+    0 0 60px rgba(0, 255, 247, 0.4),
+    0 0 100px rgba(255, 0, 255, 0.2);
+}
+
+.floating-photo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.floating-photo-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 10px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 8px rgba(176, 38, 255, 0.6);
+}
+
+.floating-photo:hover .floating-photo-label {
+  opacity: 1;
+  text-shadow: 0 0 12px rgba(0, 255, 247, 0.9),
+    0 0 24px rgba(176, 38, 255, 0.5);
+}
+
+/* Hide on screens too narrow for gutters */
+@media (max-width: 1400px) {
+  .floating-photos-container {
+    display: none;
+  }
+}
+
+/* ── 6 unique drift paths so each photo moves independently ── */
+@keyframes drift-a {
+  0%, 100% { translate: 0 0; }
+  33%      { translate: 12px -18px; }
+  66%      { translate: -8px  10px; }
+}
+@keyframes drift-b {
+  0%, 100% { translate: 0 0; }
+  25%      { translate: -14px -10px; }
+  50%      { translate: 6px  -24px; }
+  75%      { translate: -10px  8px; }
+}
+@keyframes drift-c {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 10px -20px; }
+}
+@keyframes drift-d {
+  0%, 100% { translate: 0 0; }
+  30%      { translate: -10px  14px; }
+  70%      { translate: 8px  -16px; }
+}
+@keyframes drift-e {
+  0%, 100% { translate: 0 0; }
+  40%      { translate: -12px -22px; }
+  80%      { translate: 10px   6px; }
+}
+@keyframes drift-f {
+  0%, 100% { translate: 0 0; }
+  20%      { translate: 8px  12px; }
+  60%      { translate: -14px -14px; }
+}
+
+/* ============ VIDEO PLAYER ============ */
+video::-webkit-media-controls-panel {
+  background: linear-gradient(transparent, rgba(10, 10, 10, 0.8));
 }
