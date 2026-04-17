@@ -409,7 +409,35 @@ body {
   60%      { translate: -14px -14px; }
 }
 
+/* ============ MOBILE OPTIMIZATIONS ============ */
+@media (max-width: 640px) {
+  /* Reduce GPU-heavy background animation on mobile */
+  .dmt-bg::before {
+    animation-duration: 80s;
+  }
+
+  /* Disable hover lift on touch devices — prevents sticky hover */
+  .neon-card:hover {
+    transform: none;
+  }
+
+  /* Ensure tap targets are at least 44px */
+  .neon-card {
+    min-height: 44px;
+  }
+
+  /* Tighter card padding on mobile */
+  .neon-card {
+    padding: 1rem;
+  }
+}
+
 /* ============ VIDEO PLAYER ============ */
+video {
+  /* Prevent iOS from going fullscreen automatically */
+  -webkit-playsinline: true;
+}
+
 video::-webkit-media-controls-panel {
   background: linear-gradient(transparent, rgba(10, 10, 10, 0.8));
 }

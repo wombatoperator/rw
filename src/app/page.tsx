@@ -70,7 +70,7 @@ export default function Home() {
   return (
     <div className="relative w-full">
       <FloatingPhotos />
-    <main className="flex flex-1 flex-col px-6 py-6 max-w-6xl mx-auto w-full relative z-10">
+    <main className="flex flex-1 flex-col px-4 sm:px-6 py-4 sm:py-6 max-w-6xl mx-auto w-full relative z-10">
       {/* Hero */}
       <div className="text-center mb-6">
         <div className="relative max-w-2xl mx-auto mb-4">
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
 
         <p
-          className="text-base text-white/40 max-w-2xl mx-auto mb-2 leading-relaxed"
+          className="text-sm sm:text-base text-white/40 max-w-2xl mx-auto mb-2 leading-relaxed px-2"
           style={{ fontFamily: "var(--font-mono)" }}
         >
           LD3 State Senate candidate Robert Wallace wants to be the voice of
@@ -94,7 +94,7 @@ export default function Home() {
       </div>
 
       {/* See for yourself */}
-      <div className="flex flex-col items-center mt-[8vh] mb-4">
+      <div className="flex flex-col items-center mt-[4vh] sm:mt-[8vh] mb-4">
         <p
           className="text-xs text-white/30 uppercase tracking-[0.3em] mb-2"
           style={{ fontFamily: "var(--font-display)" }}
@@ -105,7 +105,7 @@ export default function Home() {
       </div>
 
       {/* Category grid */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {categories.map((category) => {
           const vibe = CATEGORY_VIBES[category.id] || {
             icon: Sparkles,

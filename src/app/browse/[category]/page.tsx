@@ -99,7 +99,7 @@ export default async function CategoryPage({
   const totalSize = category.files.reduce((s, f) => s + f.size, 0);
 
   return (
-    <main className="flex flex-1 flex-col px-6 py-12 max-w-6xl mx-auto w-full">
+    <main className="flex flex-1 flex-col px-4 sm:px-6 py-8 sm:py-12 max-w-6xl mx-auto w-full">
       <div className="flex flex-wrap gap-2 text-xs text-white/30 mb-8" style={{ fontFamily: "var(--font-mono)" }}>
         <Link href="/" className="hover:text-dmt-purple transition-colors">the void</Link>
         <span>/</span>
@@ -133,7 +133,7 @@ export default async function CategoryPage({
         // If only one section type, skip headers
         if (sections.length <= 1) {
           return (
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {category.files.map((file) => (
                 <FileCard key={file.id} file={file} categoryId={categoryId} />
               ))}
@@ -155,7 +155,7 @@ export default async function CategoryPage({
                 ({section.files.length})
               </span>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {section.files.map((file) => (
                 <FileCard key={file.id} file={file} categoryId={categoryId} />
               ))}
