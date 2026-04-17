@@ -11,10 +11,8 @@ import {
   Flame,
   Globe,
   Wind,
-  FileStack,
-  Layers,
-  HardDrive,
   Sparkles,
+  ChevronDown,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -68,19 +66,14 @@ const CATEGORY_VIBES: Record<string, { icon: LucideIcon; quip: string; color: st
 
 export default function Home() {
   const categories = getAllCategories();
-  const totalFiles = categories.reduce((s, c) => s + c.files.length, 0);
-  const totalSize = categories.reduce(
-    (s, c) => s + c.files.reduce((a, f) => a + f.size, 0),
-    0
-  );
 
   return (
     <div className="relative w-full">
       <FloatingPhotos />
-    <main className="flex flex-1 flex-col px-6 py-12 max-w-6xl mx-auto w-full relative z-10">
+    <main className="flex flex-1 flex-col px-6 py-6 max-w-6xl mx-auto w-full relative z-10">
       {/* Hero */}
-      <div className="text-center mb-16">
-        <div className="relative max-w-2xl mx-auto mb-8">
+      <div className="text-center mb-6">
+        <div className="relative max-w-2xl mx-auto mb-4">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/hero.png"
@@ -90,7 +83,7 @@ export default function Home() {
         </div>
 
         <p
-          className="text-sm text-white/40 max-w-xl mx-auto mb-2 leading-relaxed"
+          className="text-base text-white/40 max-w-2xl mx-auto mb-2 leading-relaxed"
           style={{ fontFamily: "var(--font-mono)" }}
         >
           LD3 State Senate candidate Robert Wallace wants to be the voice of
@@ -98,23 +91,17 @@ export default function Home() {
           things. Things we think everyone should know about.
         </p>
 
-        <div className="flex justify-center gap-8 text-white/20 text-xs mt-6" style={{ fontFamily: "var(--font-mono)" }}>
-          <div className="text-center">
-            <FileStack className="w-4 h-4 text-dmt-purple mx-auto mb-1" strokeWidth={1.5} />
-            <div className="text-dmt-purple text-lg font-bold">{totalFiles}</div>
-            <div>artifacts</div>
-          </div>
-          <div className="text-center">
-            <Layers className="w-4 h-4 text-dmt-cyan mx-auto mb-1" strokeWidth={1.5} />
-            <div className="text-dmt-cyan text-lg font-bold">{categories.length}</div>
-            <div>dimensions</div>
-          </div>
-          <div className="text-center">
-            <HardDrive className="w-4 h-4 text-dmt-pink mx-auto mb-1" strokeWidth={1.5} />
-            <div className="text-dmt-pink text-lg font-bold">{formatSize(totalSize)}</div>
-            <div>of truth</div>
-          </div>
-        </div>
+      </div>
+
+      {/* See for yourself */}
+      <div className="flex flex-col items-center mt-[8vh] mb-4">
+        <p
+          className="text-xs text-white/30 uppercase tracking-[0.3em] mb-2"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          See for yourself
+        </p>
+        <ChevronDown className="w-5 h-5 text-dmt-purple animate-bounce" strokeWidth={1.5} />
       </div>
 
       {/* Category grid */}

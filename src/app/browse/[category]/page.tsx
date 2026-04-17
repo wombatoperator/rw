@@ -2,8 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getFlatCategory, formatSize } from "@/lib/manifest";
 import { getMediaUrl, getThumbnailUrl } from "@/lib/media-url";
-import { Play, FileText } from "lucide-react";
+import { Play, FileText, Scissors, Film, Image, FileText as FileIcon } from "lucide-react";
 import type { MediaFile } from "@/types";
+
+function isClip(file: MediaFile): boolean {
+  return file.type === "video" && (file.filename.toLowerCase().includes("clip") || file.size < 10_000_000);
+}
 
 function FileCard({
   file,
@@ -60,7 +64,9 @@ function FileCard({
             }`}
             style={{ fontFamily: "var(--font-mono)" }}
           >
-            {file.extension.toUpperCase()}
+            {file.type === "video"
+              ? (file.filename.toLowerCase().includes("clip") || file.size < 10_000_000 ? "CLIP" : "FULL VIDEO")
+              : file.extension.toUpperCase()}
           </span>
         </div>
       </div>
@@ -112,11 +118,51 @@ export default async function CategoryPage({
         interdimensional evidence
       </p>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {category.files.map((file) => (
-          <FileCard key={file.id} file={file} categoryId={categoryId} />
-        ))}
-      </div>
+      {(() => {
+        const clips = category.files.filter((f) => isClip(f));
+        const fullVideos = category.files.filter((f) => f.type === "video" && !isClip(f));
+        const images = category.files.filter((f) => f.type === "image");
+        const pdfs = category.files.filter((f) => f.type === "pdf");
+        const sections: { label: string; icon: React.ReactNode; files: MediaFile[]; color: string }[] = [];
+
+        if (clips.length > 0) sections.push({ label: "Clips", icon: <Scissors className="w-4 h-4" strokeWidth={1.5} />, files: clips, color: "text-dmt-cyan" });
+        if (fullVideos.length > 0) sections.push({ label: "Full Episodes", icon: <Film className="w-4 h-4" strokeWidth={1.5} />, files: fullVideos, color: "text-dmt-purple" });
+        if (images.length > 0) sections.push({ label: "Images", icon: <Image className="w-4 h-4" strokeWidth={1.5} />, files: images, color: "text-dmt-pink" });
+        if (pdfs.length > 0) sections.push({ label: "Documents", icon: <FileIcon className="w-4 h-4" strokeWidth={1.5} />, files: pdfs, color: "text-dmt-green" });
+
+        // If only one section type, skip headers
+        if (sections.length <= 1) {
+          return (
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {category.files.map((file) => (
+                <FileCard key={file.id} file={file} categoryId={categoryId} />
+              ))}
+            </div>
+          );
+        }
+
+        return sections.map((section) => (
+          <div key={section.label} className="mb-12">
+            <div className="flex items-center gap-2 mb-4">
+              <span className={section.color}>{section.icon}</span>
+              <h2
+                className={`text-sm font-bold tracking-wider uppercase ${section.color}`}
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {section.label}
+              </h2>
+              <span className="text-white/20 text-xs" style={{ fontFamily: "var(--font-mono)" }}>
+                ({section.files.length})
+              </span>
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {section.files.map((file) => (
+                <FileCard key={file.id} file={file} categoryId={categoryId} />
+              ))}
+            </div>
+          </div>
+        ));
+      })()}
 
       <p className="text-center text-[10px] text-white/10 mt-16" style={{ fontFamily: "var(--font-mono)" }}>
         &quot;Every file in this folder is 100% real. We think. Probably. Don&apos;t quote us on that.&quot;
