@@ -75,8 +75,9 @@ export default function Home() {
   );
 
   return (
-    <main className="flex flex-1 flex-col px-6 py-12 max-w-6xl mx-auto w-full">
+    <div className="relative w-full">
       <FloatingPhotos />
+    <main className="flex flex-1 flex-col px-6 py-12 max-w-6xl mx-auto w-full relative z-10">
       {/* Hero */}
       <div className="text-center mb-16">
         <div className="relative max-w-2xl mx-auto mb-8">
@@ -175,5 +176,6 @@ export default function Home() {
         Consult your local shaman before proceeding.
       </p>
     </main>
+    </div>
   );
 }

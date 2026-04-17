@@ -7,7 +7,12 @@ export function getMediaUrl(file: MediaFile): string {
   ) {
     return file.blobUrl;
   }
-  return `/api/media/${encodeURIComponent(file.localPath)}`;
+  // Encode each path segment separately so slashes stay as real path separators
+  const encodedPath = file.localPath
+    .split("/")
+    .map((segment) => encodeURIComponent(segment))
+    .join("/");
+  return `/api/media/${encodedPath}`;
 }
 
 export function getThumbnailUrl(file: MediaFile): string | null {
