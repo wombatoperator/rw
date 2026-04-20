@@ -43,6 +43,9 @@ export default function RootLayout({
         <div className="dmt-bg" />
         <div className="relative z-10 flex flex-col min-h-screen">
           {children}
+          <footer className="text-center py-4 text-white/40 text-xs font-mono">
+            Paid for by John Kavanagh for State Senate
+          </footer>
         </div>
         <Analytics />
       </body>
