@@ -86,7 +86,7 @@ export default function Home() {
           <MobilePhotoGrid />
 
           <p
-            className="mx-auto mb-2 max-w-2xl px-2 text-sm leading-relaxed text-white/40 sm:text-base"
+            className="mx-auto mb-2 max-w-2xl px-2 text-sm leading-relaxed text-white sm:text-base"
             style={{ fontFamily: "var(--font-mono)" }}
           >
             The images you see depict statements and beliefs shared by Robert
@@ -106,7 +106,7 @@ export default function Home() {
         {/* See for yourself */}
         <div className="mt-1 mb-2 flex flex-col items-center sm:mt-2">
           <p
-            className="mb-2 text-xs uppercase tracking-[0.3em] text-white/30"
+            className="mb-2 text-xs uppercase tracking-[0.3em] text-white"
             style={{ fontFamily: "var(--font-display)" }}
           >
             See for yourself
@@ -147,7 +147,7 @@ export default function Home() {
                   {category.name}
                 </h2>
                 <p
-                  className="mb-4 text-xs italic text-white/30"
+                  className="mb-4 text-xs italic text-white"
                   style={{ fontFamily: "var(--font-mono)" }}
                 >
                   &quot;{vibe.quip}&quot;
@@ -171,7 +171,7 @@ export default function Home() {
                       {counts.pdfs} PDF{counts.pdfs !== 1 ? "s" : ""}
                     </span>
                   )}
-                  <span className="text-white/20">{formatSize(catSize)}</span>
+                  <span className="text-white">{formatSize(catSize)}</span>
                 </div>
               </Link>
             );
@@ -180,7 +180,7 @@ export default function Home() {
 
         {/* Warning footer */}
         <p
-          className="mx-auto mt-16 max-w-md text-center text-[10px] text-white/10"
+          className="mx-auto mt-16 max-w-md text-center text-[10px] text-white"
           style={{ fontFamily: "var(--font-mono)" }}
         >
           WARNING: Side effects may include interdimensional travel, spontaneous
