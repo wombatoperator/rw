@@ -72,12 +72,12 @@ function FileCard({
       </div>
       <div className="p-4">
         <h3
-          className="text-xs font-medium text-white/80 group-hover:text-white transition-colors line-clamp-2 mb-2"
+          className="text-xs font-medium text-white transition-colors line-clamp-2 mb-2"
           style={{ fontFamily: "var(--font-mono)" }}
         >
           {file.name}
         </h3>
-        <div className="flex justify-between items-center text-[10px] text-white/30" style={{ fontFamily: "var(--font-mono)" }}>
+        <div className="flex justify-between items-center text-[10px] text-white" style={{ fontFamily: "var(--font-mono)" }}>
           {file.date && <span>{file.date}</span>}
           <span>{formatSize(file.size)}</span>
         </div>
@@ -100,7 +100,7 @@ export default async function CategoryPage({
 
   return (
     <main className="flex flex-1 flex-col px-4 sm:px-6 py-8 sm:py-12 max-w-6xl mx-auto w-full">
-      <div className="flex flex-wrap gap-2 text-xs text-white/30 mb-8" style={{ fontFamily: "var(--font-mono)" }}>
+      <div className="flex flex-wrap gap-2 text-xs text-white mb-8" style={{ fontFamily: "var(--font-mono)" }}>
         <Link href="/" className="hover:text-dmt-purple transition-colors">the void</Link>
         <span>/</span>
         <span className="text-dmt-cyan">{category.name}</span>
@@ -113,7 +113,7 @@ export default async function CategoryPage({
       >
         {category.name.toUpperCase()}
       </h1>
-      <p className="text-white/30 text-sm mb-8" style={{ fontFamily: "var(--font-mono)" }}>
+      <p className="text-white text-sm mb-8" style={{ fontFamily: "var(--font-mono)" }}>
         {category.files.length} artifact{category.files.length !== 1 ? "s" : ""} &middot; {formatSize(totalSize)} of
         interdimensional evidence
       </p>
@@ -151,7 +151,7 @@ export default async function CategoryPage({
               >
                 {section.label}
               </h2>
-              <span className="text-white/20 text-xs" style={{ fontFamily: "var(--font-mono)" }}>
+              <span className="text-white text-xs" style={{ fontFamily: "var(--font-mono)" }}>
                 ({section.files.length})
               </span>
             </div>
@@ -164,7 +164,7 @@ export default async function CategoryPage({
         ));
       })()}
 
-      <p className="text-center text-[10px] text-white/10 mt-16" style={{ fontFamily: "var(--font-mono)" }}>
+      <p className="text-center text-[10px] text-white mt-16" style={{ fontFamily: "var(--font-mono)" }}>
         &quot;Every file in this folder is 100% real. We think. Probably. Don&apos;t quote us on that.&quot;
       </p>
     </main>
