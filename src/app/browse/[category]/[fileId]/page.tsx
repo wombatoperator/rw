@@ -96,10 +96,6 @@ export default function FileViewerPage() {
         ) : <div />}
       </div>
 
-      <p className="text-center text-[10px] text-white mt-16" style={{ fontFamily: "var(--font-mono)" }}>
-        &quot;You are now {fileIndex + 1} of {category.files.length} artifacts deep into {category.name}.
-        There is no turning back. (Just kidding, use the breadcrumbs.)&quot;
-      </p>
     </main>
   );
 }
