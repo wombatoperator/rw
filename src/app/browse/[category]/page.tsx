@@ -163,10 +163,6 @@ export default async function CategoryPage({
           </div>
         ));
       })()}
-
-      <p className="text-center text-[10px] text-white mt-16" style={{ fontFamily: "var(--font-mono)" }}>
-        &quot;Every file in this folder is 100% real. We think. Probably. Don&apos;t quote us on that.&quot;
-      </p>
     </main>
   );
 }
