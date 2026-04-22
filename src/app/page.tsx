@@ -187,6 +187,13 @@ export default function Home() {
           enlightenment, and an overwhelming desire for Taco Bell sauce packets.
           Consult your local shaman before proceeding.
         </p>
+
+        <p
+          className="mx-auto mt-4 max-w-md text-center text-[10px] text-white/10"
+          style={{ fontFamily: "var(--font-mono)" }}
+        >
+          Some images on this site are AI-generated.
+        </p>
       </main>
     </div>
   );
