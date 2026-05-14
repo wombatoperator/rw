@@ -103,6 +103,16 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Divider image */}
+        <div className="mx-auto mb-2 mt-2 w-full max-w-2xl px-2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/photos/IMG_4421.jpeg"
+            alt=""
+            className="w-full rounded-2xl border border-dmt-glass-border shadow-2xl shadow-dmt-purple/10"
+          />
+        </div>
+
         {/* See for yourself */}
         <div className="mt-1 mb-2 flex flex-col items-center sm:mt-2">
           <p
