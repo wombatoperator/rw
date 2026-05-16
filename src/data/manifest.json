@@ -388,6 +388,17 @@
               "date": null,
               "localPath": "Robert Wallace 2/Interdimensional Travel/Life Interdimensional 3.mp4",
               "blobUrl": null
+            },
+            {
+              "id": "this-is-the-person-that-should",
+              "name": "This is the Person That Should",
+              "filename": "This_is_the_person_that_should.mp4",
+              "type": "video",
+              "extension": "mp4",
+              "size": 3323694,
+              "date": null,
+              "localPath": "Robert Wallace 2/Interdimensional Travel/This_is_the_person_that_should.mp4",
+              "blobUrl": null
             }
           ]
         },
@@ -520,6 +531,17 @@
               "size": 72837056,
               "date": null,
               "localPath": "Robert Wallace 2/Scientology/E.9 Oaths, The New Age and Forgiving as you were Forgiven.mp4",
+              "blobUrl": null
+            },
+            {
+              "id": "video-of-scientology-entrance-incident",
+              "name": "Video of Scientology Entrance Incident",
+              "filename": "Video_of_Scientology_Entrance_Incident.mp4",
+              "type": "video",
+              "extension": "mp4",
+              "size": 2328030,
+              "date": null,
+              "localPath": "Robert Wallace 2/Scientology/Video_of_Scientology_Entrance_Incident.mp4",
               "blobUrl": null
             }
           ]
